@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+# Load paths are hard
+$:.unshift(File.dirname(__FILE__) + '../lib')
+
+# Trap interrupts to quit cleanly.
+Signal.trap('INT') { exit 1 }
+
+require 'community_zero'
+require 'optparse'
+
+options = { :publish => true }
+
+OptionParser.new do |opts|
+  opts.banner = 'Usage: community-zero [ARGS]'
+
+  opts.on('-H', '--host HOST', 'Host to bind to (default: 127.0.0.1)') do |value|
+    options[:host] = value
+  end
+
+  opts.on('-p', '--port PORT', Integer, 'Port to listen on (default: 3389)') do |value|
+    options[:port] = value
+  end
+
+  opts.on_tail('-h', '--help', 'Show this message') do
+    puts opts
+    exit
+  end
+
+  opts.on_tail('--version', 'Show version') do
+    puts CommunityZero::VERSION
+    exit
+  end
+end.parse!
+
+server = CommunityZero::Server.new(options)
+server.start
