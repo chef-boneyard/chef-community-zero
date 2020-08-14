@@ -1,7 +1,7 @@
 require 'net/http'
 require 'singleton'
 
-require 'community_zero/server'
+require_relative 'server'
 
 module CommunityZero
   class RSpec

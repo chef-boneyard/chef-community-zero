@@ -19,7 +19,7 @@ require 'open-uri'
 require 'rack'
 require 'webrick'
 
-require 'community_zero'
+require_relative '../community_zero'
 
 module CommunityZero
   # A single instance of the Community Server.
