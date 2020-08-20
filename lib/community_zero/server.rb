@@ -15,9 +15,9 @@
 # limitations under the License.
 #
 
-require 'open-uri'
-require 'rack'
-require 'webrick'
+require 'open-uri' unless defined?(OpenURI)
+require 'rack' unless defined?(Rack)
+require 'webrick' unless defined?(WEBrick)
 
 require_relative '../community_zero'
 
