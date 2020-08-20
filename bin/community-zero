@@ -7,7 +7,7 @@ $:.unshift(File.dirname(__FILE__) + '../lib')
 Signal.trap('INT') { exit 1 }
 
 require 'community_zero'
-require 'optparse'
+require 'optparse' unless defined?(OptionParser)
 
 options = { :publish => true }
 
