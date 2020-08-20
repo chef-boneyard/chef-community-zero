@@ -20,8 +20,8 @@ module CommunityZero
   #
   # @author Seth Vargo <sethvargo@gmail.com>
   class CookbooksEndpoint < Endpoint
-    require 'rubygems/package'
-    require 'zlib'
+    require 'rubygems/package' unless defined?(Gem::Package)
+    require 'zlib' unless defined?(Zlib)
 
     # GET /cookbooks
     def get(request)

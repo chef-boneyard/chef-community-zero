@@ -1,5 +1,5 @@
-require 'net/http'
-require 'singleton'
+require 'net/http' unless defined?(Net::HTTP)
+require 'singleton' unless defined?(Singleton)
 
 require_relative 'server'
 

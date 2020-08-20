@@ -15,8 +15,8 @@
 # limitations under the License.
 #
 
-require 'json'
-require 'timeout'
+require 'json' unless defined?(JSON)
+require 'timeout' unless defined?(Timeout)
 
 module CommunityZero
   require_relative 'community_zero/chef'

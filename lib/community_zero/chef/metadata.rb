@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-require 'json'
+require 'json' unless defined?(JSON)
 
 module CommunityZero
   # A quick, short metadata parser.
