@@ -1,13 +1,11 @@
 Community Zero
 ==============
-[![Gem Version](https://badge.fury.io/rb/community-zero.png)](http://badge.fury.io/rb/community-zero)
-[![Build Status](https://travis-ci.org/sethvargo/community-zero.png?branch=master)](https://travis-ci.org/sethvargo/community-zero)
-[![Dependency Status](https://gemnasium.com/sethvargo/community-zero.png)](https://gemnasium.com/sethvargo/community-zero)
-[![Code Climate](https://codeclimate.com/github/sethvargo/community-zero.png)](https://codeclimate.com/github/sethvargo/community-zero)
+[![Gem Version](https://badge.fury.io/rb/community-zero.svg)](http://badge.fury.io/rb/community-zero)
+[![Build Status](https://travis-ci.org/sethvargo/community-zero.svg?branch=master)](https://travis-ci.org/chef/community-zero)
 
 Description
 -----------
-Based largely off of [Chef Zero](https://github.com/jkeiser/chef-zero), Community Zero is an in-memory Chef Community Site that can be useful for testing. It IS intended to be simple, API compliant, easy to run and test. It is NOT intended to be secure, scalable, performant, scalable, persistent, or production-ready. It does not authentication or authorization (it will never throw a 400, 401, or 403). It does not persist data.
+Based largely off of [Chef Zero](https://github.com/chef/chef-zero), Community Zero is an in-memory Chef Community Site that can be useful for testing. It IS intended to be simple, API compliant, easy to run and test. It is NOT intended to be secure, scalable, performant, scalable, persistent, or production-ready. It does not authentication or authorization (it will never throw a 400, 401, or 403). It does not persist data.
 
 Because Community Zero run in memory, it's super fast and lightweight. This makes it perfect for testing against a "real" Community Site without mocking the entire Internet.
 
